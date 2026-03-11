@@ -5,21 +5,21 @@
 class FeishuDocs < Formula
   desc "飞书文档与知识库 CLI 管理工具"
   homepage "https://github.com/KQAR/feishu-docs"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/KQAR/feishu-docs/releases/download/v0.1.0/feishu-docs_0.1.0_darwin_amd64.tar.gz"
-      sha256 "18d00bd34e9608acd2645b80451976ede0f14ff54e9c1a3330fe1e4c9b42ed63"
+      url "https://github.com/KQAR/feishu-docs/releases/download/v0.2.0/feishu-docs_0.2.0_darwin_amd64.tar.gz"
+      sha256 "7fdb4f4d5e6b46391fd956a862f42b4c6061699ae241a14bce45b69c4b20ddd8"
 
       define_method(:install) do
         bin.install "feishu-docs"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/KQAR/feishu-docs/releases/download/v0.1.0/feishu-docs_0.1.0_darwin_arm64.tar.gz"
-      sha256 "26952c59220e1308031f55e2aac6b94da0a40a5d26dfe629bd7a6af73ab3ee30"
+      url "https://github.com/KQAR/feishu-docs/releases/download/v0.2.0/feishu-docs_0.2.0_darwin_arm64.tar.gz"
+      sha256 "a7dc5df333f6137efc5525915560afc6ad45850b2795aa952ea293e2d3eab751"
 
       define_method(:install) do
         bin.install "feishu-docs"
@@ -29,15 +29,15 @@ class FeishuDocs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/KQAR/feishu-docs/releases/download/v0.1.0/feishu-docs_0.1.0_linux_amd64.tar.gz"
-      sha256 "d041f9960b79b3eb317a76c387dfdba82b772576ff2c4f4cb6ce893fa987199c"
+      url "https://github.com/KQAR/feishu-docs/releases/download/v0.2.0/feishu-docs_0.2.0_linux_amd64.tar.gz"
+      sha256 "3e85b1a859ba345d97866db0eff98276fa4ff939cbe5ced705180f9054d07748"
       define_method(:install) do
         bin.install "feishu-docs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/KQAR/feishu-docs/releases/download/v0.1.0/feishu-docs_0.1.0_linux_arm64.tar.gz"
-      sha256 "99a38d130fc15a8012e5b31551aca393fb5326e233e22a05abd68820f41a9927"
+      url "https://github.com/KQAR/feishu-docs/releases/download/v0.2.0/feishu-docs_0.2.0_linux_arm64.tar.gz"
+      sha256 "79d625d6f316ada47322ce361632e6872c5cda43385b30a7b8510174649acb88"
       define_method(:install) do
         bin.install "feishu-docs"
       end
