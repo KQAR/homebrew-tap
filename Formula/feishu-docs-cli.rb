@@ -5,21 +5,21 @@
 class FeishuDocsCli < Formula
   desc "飞书文档与知识库 CLI 管理工具"
   homepage "https://github.com/KQAR/feishu-docs-cli"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/KQAR/feishu-docs-cli/releases/download/v0.4.0/feishu-docs-cli_0.4.0_darwin_amd64.tar.gz"
-      sha256 "65f8a37f50e86d679594176d70ac4c7eee496cbd195862df406ddcfb4cf2caed"
+      url "https://github.com/KQAR/feishu-docs-cli/releases/download/v0.4.1/feishu-docs-cli_0.4.1_darwin_amd64.tar.gz"
+      sha256 "6c1bca7502dc333959bbbe92853ea5503e7b896bf5983e441e0e0544d440a4a3"
 
       define_method(:install) do
         bin.install "feishu-docs-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/KQAR/feishu-docs-cli/releases/download/v0.4.0/feishu-docs-cli_0.4.0_darwin_arm64.tar.gz"
-      sha256 "73a24d2a8825389122f9f8fb9e3f8141b3fda87f3412159817fc2c2565eecd11"
+      url "https://github.com/KQAR/feishu-docs-cli/releases/download/v0.4.1/feishu-docs-cli_0.4.1_darwin_arm64.tar.gz"
+      sha256 "449974009eceb6ae5d42c80835223d6eb61d27c58b600910d290ad0159018da8"
 
       define_method(:install) do
         bin.install "feishu-docs-cli"
@@ -29,15 +29,15 @@ class FeishuDocsCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/KQAR/feishu-docs-cli/releases/download/v0.4.0/feishu-docs-cli_0.4.0_linux_amd64.tar.gz"
-      sha256 "a8fd04e90359c45ae23ef2fda41ed8846c8094328e7e655bf9f951ae1d06ea77"
+      url "https://github.com/KQAR/feishu-docs-cli/releases/download/v0.4.1/feishu-docs-cli_0.4.1_linux_amd64.tar.gz"
+      sha256 "7169a84f4ff1f97c5fc712bb9b4d137276acaf23ed1ebc71be9aaa4d796db034"
       define_method(:install) do
         bin.install "feishu-docs-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/KQAR/feishu-docs-cli/releases/download/v0.4.0/feishu-docs-cli_0.4.0_linux_arm64.tar.gz"
-      sha256 "bb9927c9b417714286fbaf511d0bc79051dfacf8f6dd46623ccd642ec7761988"
+      url "https://github.com/KQAR/feishu-docs-cli/releases/download/v0.4.1/feishu-docs-cli_0.4.1_linux_arm64.tar.gz"
+      sha256 "4ae6ffc7751ac76006d43739a2aaa137bd520c79c373accda554d1fb35c263bc"
       define_method(:install) do
         bin.install "feishu-docs-cli"
       end
