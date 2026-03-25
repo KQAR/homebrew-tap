@@ -11,7 +11,7 @@ class FeishuDocsCli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/KQAR/feishu-docs-cli/releases/download/v0.3.0/feishu-docs-cli_0.3.0_darwin_amd64.tar.gz"
-      sha256 "aa52f4f9edc9591907754e2e328979e243bf6ded67cb28605d5516a005a47b9b"
+      sha256 "fc560548697927c50ee6164d54405ab01f235e1f3cbddbb6c39cd406f7c17b3a"
 
       define_method(:install) do
         bin.install "feishu-docs-cli"
@@ -19,7 +19,7 @@ class FeishuDocsCli < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/KQAR/feishu-docs-cli/releases/download/v0.3.0/feishu-docs-cli_0.3.0_darwin_arm64.tar.gz"
-      sha256 "8aa24194e0a836754ef46cd01c86ff79090ad65da46f5adc91935d2e9a2949ac"
+      sha256 "63cf778b3222234eaf11b187bf5ff99fce5c255816eab18d4c40bd811f0950a0"
 
       define_method(:install) do
         bin.install "feishu-docs-cli"
@@ -30,14 +30,14 @@ class FeishuDocsCli < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/KQAR/feishu-docs-cli/releases/download/v0.3.0/feishu-docs-cli_0.3.0_linux_amd64.tar.gz"
-      sha256 "73d7856a8ca2c31dc725a95caefc4177b99cd3af682e5a7161bbebc410f726a3"
+      sha256 "2174a122850a0e23862442f078776d96c7d37440119ba6f724171b7d214eae3d"
       define_method(:install) do
         bin.install "feishu-docs-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/KQAR/feishu-docs-cli/releases/download/v0.3.0/feishu-docs-cli_0.3.0_linux_arm64.tar.gz"
-      sha256 "38587b0802e9a0ef2c9e4162c87a0547645120431c0b3939a6cde61e2b4130a3"
+      sha256 "dc244b4d2540af563b420497de6647355ffb35aec60ab208f71af24cf5a96d49"
       define_method(:install) do
         bin.install "feishu-docs-cli"
       end
